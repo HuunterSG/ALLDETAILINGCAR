@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Playfair Display', serif;
+    font-size: 65.2%;
+}
+
+/*------BODY------*/
+.fondo {
+    background: linear-gradient(to bottom, rgb(83, 134, 177), rgb(137, 215, 221), rgb(83, 134, 177));
+}
+/*------HEADER------*/
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(70, 130, 180);
+    box-shadow: 0 0.5rem 1rem black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: 85%;
+}
+
+.titulo_navegacion {
+    flex: 1 1 50px;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0.2rem 1rem steelblue;
+    text-decoration: none;
+    
+}
+
+.nav {
+    font-size: 1.5rem;
+    width: 100%;
+
+}
+
+.nav__ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.nav__li {
+    margin:auto;
+    text-align: center;
+}
+
+.nav__a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 2rem;
+}
+
+/*------MAIN-&-SECTION------*/
+.subtitle {
+    font-size: 7rem;
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 0.2rem 0.5rem steelblue;
+    margin-bottom: 100px;
+    animation-name: llegando-derecha;
+    animation-duration: 5s;
+    animation-delay: 0.5s ease;
+    animation-direction: alternate;
+}
+
+.p-portada {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container-img {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.container-img2 {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    color: rgb(185, 185, 185);
+    box-shadow: inset 2px 2px 0.5rem white;
+    margin: 3% 8%;
+    padding: 0;
+}
+
+.img-portada {
+  
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow:  3px 3px 0.2rem rgb(0, 0, 0);
+    margin: 5%;
+}
+    
+.img-portada:hover {
+    box-shadow: 2px 2px 1.2rem rgb(255, 255, 255);
+    
+    transform: translate3d(15px);
+}
+
+
+/*------IMAGENES_QUIENES_SOMOS------*/
+.img-qs {
+    width: 450px;
+    height: 300px;
+    border-style: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0.5rem 2.5rem steelblue;
+    margin: 2%;
+}
+
+
+/*-------GRID_QUIENES_SOMOS--------*/
+
+.grid-qs {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    margin: 2% 4%;
+}
+.grid-qs .p-portada {
+    padding: 0;
+    margin: 0 8rem;
+    font-size: 2.5rem;
+}
+.label {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.border {
+    background-color: rgb(153, 153, 153);
+    border-style: hidden;
+    border-radius: 25px;
+    box-shadow: -0.3rem 1.5rem 0.5rem steelblue;
+    padding: 4%;
+}
+
+/*-----------------------------------------*/
+.text-portada {
+    flex: 1 2 50px;
+    width: 300px;
+    height: 150px;
+    margin: 5%;
+    font-size: 2rem;
+    text-align:center
+}
+/*--------TARJETA-GALERIA-------*/
+.gallery-card {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    margin-top: 2%;    
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    padding: 2rem;
+    margin: 1rem;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+    text-align: center;
+    box-shadow: 0.5rem 1rem 0.8rem rgb(0, 114, 207);
+}
+
+.card:hover {
+    transform: scale(1.15);
+    transition: 0.8s ease all;
+    background-color:#0c0c0c;
+    opacity: 92%;
+    box-shadow:inset 2.5px 2.5px 0.2rem rgb(190, 190, 190);
+    
+}
+
+.card:hover .card__img{
+    box-shadow:  2px 2px 1.1rem rgb(154, 232, 252);
+}
+
+.card:hover .card__title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4;
+    color: rgb(161, 161, 161);
+    text-transform: uppercase;
+}
+.card:hover li {
+    color: rgb(161, 161, 161);
+}
+.card__img {
+    max-width: 250px;
+    max-height: 200px;
+    border-style: hidden;
+    border-radius: 10px;
+
+}
+
+.card__title {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 2%;
+    color: rgb(0, 0, 0);
+}
+
+.card li {
+    font-size: 1.2rem;
+    list-style: none;
+    margin: 2%;
+    
+}
+/*------------FOOTER------------*/
+.footer {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: steelblue;
+    box-shadow: 0 -1rem 1rem black;
+    opacity: 85%;
+}
+
+.footer__contact {
+    
+    padding: 2%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1%;
+}
+
+.footer__contact_a {
+    display:block;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.footer__ubicacion {
+    
+    padding: 2%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1%;
+}
+
+.footer__horario {
+    
+    padding: 2%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1%;
+}
+
+@keyframes llegando-derecha{
+    0% {
+        opacity: 0;
+        transform: translatey(-100px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translatey(100px);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}

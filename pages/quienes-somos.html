@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllDetailingCar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/valencia.png" type="image/x-icon">    
+</head>
+<body class="fondo">
+    <header class="container">
+        <h1><a href="../index.html" class="titulo_navegacion">AllDetailingCar</a></h1>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="../index.html" class="nav__a">Inicio</a></li>
+                <li class="nav__li"><a href="#" class="nav__a">Quienes Somos</a></li>
+                <li class="nav__li"><a href="./productos.html" class="nav__a">Productos</a></li>
+                <li class="nav__li"><a href="./servicios.html" class="nav__a">Servicios</a></li>
+                <li class="nav__li"><a href="./galeria.html" class="nav__a">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="subtitle">¿Quienes somos? Aqui te lo explicamos</h2>
+        
+        <section class="grid-qs">
+            <div>
+                <p class="p-portada">
+                    Somos una estetica Vehicular, que se inicio durante la pandemia, Nos mantenemos siempre especializandonos en nuevos servicios para una mejor atencion y calidad de trabajos, brindamos servicios esteticos y venta de productos. 
+                    Podemos asesorarte a la hora de tener que hacerle algun tratamiento a tu vehiculo o comprar algun embellecedor, consideramos que ustedes son parte de nuestra familia ya que nos conocen y nos apoyan siempre.
+                    Y para los nuevos vengan no se arrepentiran de habernos conocido.</p>
+            </div>
+            <div>
+                <form class="border">
+                    
+                        <legend class="p-portada"> Dejenos su duda aqui y nos comunicaremos con usted</legend>
+                            <div>
+                                <label for="nombre" class="label">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" required=1 placeholder="juan carlos">
+                            </div>
+                            <div>
+                            <label for="apellido" class="label">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" required=1 placeholder="gonzalez">
+                        </div>
+                        <div>
+                            <label for="numero-de-telefono" class="label">Numero de telefono</label>
+                            <input type="number" name="numero-de-telefono" id="numero-de-telefono" required=1 placeholder="+5492235****">
+                        </div>
+                        <div>
+                            <label for="email" class="label">Correo Electronico</label>
+                            <input type="email" name="email" id="email" required=1 placeholder="ejemplo555@gmail.com">
+                        <div >
+                            <label for="consulta" class="label" >Seleccione sobre que tema trata su duda, para una respuesta mas rapida</label> <br>
+                            <select name="consulta" id="consulta">
+                                <option value="p">Producto</option>
+                                <option value="s">Servicio</option>
+                                <option value="sn">Sobre nostros</option>
+                                <option value="o">Otra</option>
+                            </select>
+                        </div>
+                        </div>
+                        <label for="duda" class="label">Estamos para ayudarlo</label> <br>
+                        <textarea name="duda" id="duda" cols="30" rows="10" placeholder="deje su consulta aqui"></textarea>
+                        <div>
+                        <div>
+                           <label for="terminos" class="label">Acepta nuestros terminos y condiciones</label>
+                            <input type="checkbox" name="terminos" id="terminos">
+                        </div>
+                            <input  type="submit" value="Enviar">
+                            <input type="reset" value="Borrar consulta">
+                        </div>
+                    
+                </form> 
+            </div>    
+        </section>
+        <div class="container-img">     
+            <img src="../img/gol power.png" alt="demostracion de nuestro trabajo" class="img-qs">
+            <h3 class="text-portada">Gracias por elegirnos y formar parte de nosotros</h3>
+            <img src="../img/Argo.png" alt="demostracion de nuestro trabajo" class="img-qs">
+        </div>    
+    </main>
+    <footer class="footer">
+        <div class="footer__contact">
+            <h3>Contacto</h3>
+            <div>
+                <a href="https://www.instagram.com/alldetailingcar/" class="footer__contact_a"><img src="../img/instagram.png" alt="instagram" width="45px"> Siguenos en Instagram</a>
+                <a href=""  class="footer__contact_a"><img src="../img/whatsapp.png" alt="whatsapp" width="45px"> Envianos un whatsapp</a> 
+            </div>
+        </div>
+        <div class="footer__ubicacion">
+            <h3>Ubicacion</h3>
+            <p>San Manuel, Buenos Aires, Argentina <br> Direccion:....</p>
+        </div>
+        <div class="footer__horario">
+            <h3>Horario:</h3>
+            <p>Luneas A Viernes de 10hs a 17hs. <br> Feriados y fin de semana consultar </p>
+        </div>
+    </footer>
+</body>
+</html>
