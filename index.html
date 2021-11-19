@@ -7,24 +7,40 @@
     <title>AllDetailingCar</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/valencia.png" type="image/x-icon">    
+    <link rel="shortcut icon" href="./img/valencia.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
 </head>
 <body class="fondo" >
-    <header class="container ">
-        <h1><a href="#" class="titulo_navegacion">AllDetailingCar</a></h1>
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
-                <li class="nav__li"><a href="./pages/quienes-somos.html" class="nav__a">Quienes Somos</a></li>
-                <li class="nav__li"><a href="./pages/productos.html" class="nav__a">Productos</a></li>
-                <li class="nav__li"><a href="./pages/servicios.html" class="nav__a">Servicios</a></li>
-                <li class="nav__li"><a href="./pages/galeria.html" class="nav__a">Galeria</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid ">
+            <h1><a href="#" class="titulo_navegacion">AllDetailingCar</a></h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/quienes-somos.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>        
     </header>
-    <main>
-        <section>
-            <h2 class="subtitle">AllDetailingCar</h2>
+    <main >
+        <section class="container-fluid">
+            <h2 class="subtitle ">AllDetailingCar</h2>
             <p class="p-portada">Aqui podras encontrar los resultados de nuestros trabajos. Antes y despues, 
             nuestras recomendaciones para sus cuidados, los productos que trabajamos y mucho mas.</p>
             <div class="container-img">
@@ -34,39 +50,38 @@
             </div>
         </section>    
     
-        <section>
+        <section class="container-fluid">
             <h2 class="p-portada">Productos mas Vendidos</h2>
             <h3 class="p-portada">Si tienes dudas sobre nuestros productos <a href="./pages/quienes-somos.html">haz click aqui</a></h3>
-            <div class="container-img2">
-                
-                    <img src="./img/producto1.png" alt="producto1" class="img-portada">
-                
-                    <h3 class="text-portada">Combo **** </h3>
-                    <p class="text-portada">descripcion del producto 1</p>
-                    <h4 class="text-portada">precio $$$</h4>
-                   
-            </div>
-            <div class="container-img2">
-                
-                    <img src="./img/producto2.png" alt="producto2" class="img-portada">
-                
-                    <h3 class="text-portada">nombre del producto 2</h3>
-                    <p class="text-portada">descripcion del producto 2</p>
-                    <h4 class="text-portada">precio</h4>
-                
-            </div>
-            <div class="container-img2">
-                
-                    <img src="./img/producto3.png" alt="producto3" class="img-portada">
-                
-                    <h3 class="text-portada">KIT Toxic Shine</h3>
-                    <p class="text-portada">Kit de alta calidad para el cuidado de tu vehiculo</p>
-                    <h4 class="text-portada">precio $$</h4>
-                
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner container-sm mb-5">
+                    <div class="carousel-item active ">
+                        <img src="./img/producto1.png" class="d-block mx-auto w-25 " alt="producto1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/producto2.png" class="d-block mx-auto w-25" alt="producto2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/producto3.png" class="d-block mx-auto w-25" alt="producto3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <div class="footer__contact">
             <h3>Contacto</h3>
             <div>
@@ -83,5 +98,6 @@
             <p>Luneas A Viernes de 10hs a 17hs. <br> Feriados y fin de semana consultar </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -20,13 +20,14 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    background: rgb(70, 130, 180);
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(226, 226, 226);
     box-shadow: 0 0.5rem 1rem black;
     position: sticky;
     top: 0;
     z-index: 1;
-    opacity: 85%;
+    font-size: 1.5rem;
 }
 
 .titulo_navegacion {
@@ -67,7 +68,7 @@ html {
 
 /*------MAIN-&-SECTION------*/
 .subtitle {
-    font-size: 7rem;
+    font-size: 4rem;
     color: #000000;
     text-align: center;
     text-shadow: 0 0.2rem 0.5rem steelblue;
@@ -237,9 +238,9 @@ html {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    background-color: steelblue;
+    background: rgb(226, 226, 226);
     box-shadow: 0 -1rem 1rem black;
-    opacity: 85%;
+    
 }
 
 .footer__contact {
