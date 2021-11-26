@@ -10,15 +10,20 @@
     <link rel="shortcut icon" href="../img/valencia.png" type="image/x-icon">    
 </head>
 <body class="fondo">
-    <header class="container">
-        <h1><a href="../index.html" class="titulo_navegacion">AllDetailingCar</a></h1>
-        <nav class="nav">
+    <header >
+        <div class="container-encabezado" >
+            <div >
+                <img src="../img/menu.png" class="icono-menu">
+            </div>
+            <h1><a href="../index.html" class="titulo_navegacion">AllDetailingCar</a></h1>
+        </div>
+        <nav class="cont-menu active">
             <ul class="nav__ul">
-                <li class="nav__li"><a href="../index.html" class="nav__a">Inicio</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Quienes Somos</a></li>
-                <li class="nav__li"><a href="./productos.html" class="nav__a">Productos</a></li>
-                <li class="nav__li"><a href="./servicios.html" class="nav__a">Servicios</a></li>
-                <li class="nav__li"><a href="./galeria.html" class="nav__a">Galeria</a></li>
+                <li class="nav__li"><a class="nav__a" href="../index.html">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="#">Quienes Somos</a></li>
+                <li class="nav__li"><a class="nav__a" href="./productos.html">Productos</a></li>
+                <li class="nav__li"><a class="nav__a" href="./servicios.html">Servicios</a></li>
+                <li class="nav__li"><a class="nav__a" href="./galeria.html">Galeria</a></li>
             </ul>
         </nav>
     </header>
@@ -83,20 +88,27 @@
     </main>
     <footer class="footer">
         <div class="footer__contact">
-            <h3>Contacto</h3>
+            <h3 class="subtitle">Contacto</h3>
             <div>
-                <a href="https://www.instagram.com/alldetailingcar/" class="footer__contact_a"><img src="../img/instagram.png" alt="instagram" width="45px"> Siguenos en Instagram</a>
-                <a href=""  class="footer__contact_a"><img src="../img/whatsapp.png" alt="whatsapp" width="45px"> Envianos un whatsapp</a> 
+                <a href="https://www.instagram.com/alldetailingcar/" >
+                    <img src="./img/instagram.png" alt="instagram" class="img-footer">
+                    <p class="p-portada">Siguenos en Instagram</p>
+                </a>
+                <a href=""  >
+                    <img src="./img/whatsapp.png" alt="whatsapp" class="img-footer">
+                    <p class="p-portada">Envianos un whatsapp</p>
+                </a>                
             </div>
         </div>
         <div class="footer__ubicacion">
-            <h3>Ubicacion</h3>
-            <p>San Manuel, Buenos Aires, Argentina <br> Direccion:....</p>
+            <h3 class="subtitle">Ubicacion</h3>
+            <p class="p-portada">San Manuel, Buenos Aires, Argentina <br> Direccion:....</p>
         </div>
         <div class="footer__horario">
-            <h3>Horario:</h3>
-            <p>Luneas A Viernes de 10hs a 17hs. <br> Feriados y fin de semana consultar </p>
+            <h3 class="subtitle">Horario:</h3>
+            <p class="p-portada">Luneas A Viernes de 10hs a 17hs. <br> Feriados y fin de semana consultar </p>
         </div>
     </footer>
+    <script src="../js/burguer.js"></script>
 </body>
 </html>

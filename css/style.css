@@ -9,284 +9,172 @@ html {
     font-size: 65.2%;
 }
 
-/*------BODY------*/
+/*----  ----BODY----  ----*/
 .fondo {
-    background: linear-gradient(to bottom, rgb(83, 134, 177), rgb(137, 215, 221), rgb(83, 134, 177));
+    background: linear-gradient(to bottom, rgb(83,134,177), rgb(137,215,221), rgb(83,134,177) );
 }
-/*------HEADER------*/
-
-.container {
+/*----  ----HEADER----  ----*/
+.container-encabezado {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: rgb(226, 226, 226);
-    box-shadow: 0 0.5rem 1rem black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(165, 165, 165);
+    box-shadow: 0px 2px 5px black;
     position: sticky;
     top: 0;
     z-index: 1;
-    font-size: 1.5rem;
 }
-
-.titulo_navegacion {
-    flex: 1 1 50px;
-    font-size: 2.5rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 0 0.2rem 1rem steelblue;
+.titulo_navegacion{
+    display: block;
+    margin: auto;
     text-decoration: none;
+    text-align:center;
+    font-size: 3rem;
+    color: black;
+    
+}
+    /* ESTILO PARA ICONO MENU*/
+.icono-menu {
+    margin-right: 40px ;
+    position: relative;
+    z-index: 1;
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
     
 }
 
-.nav {
-    font-size: 1.5rem;
-    width: 100%;
-
+    /* ESTILO PARA CONTENEDOR DE MENU*/
+.cont-menu {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+    /*ESTILO PARA JAVASCRIPT*/
+.active {
+    transform: translate(-600px);
 }
 
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+    /*ESTILO LISTADO MENU*/
+
 .nav__ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 100px 0px 20px 0px ;
     list-style: none;
-    margin-bottom: 1rem;
 }
 
 .nav__li {
-    margin:auto;
-    text-align: center;
+    display: block;
+    padding: 10px 50px;
+    cursor: pointer;
 }
 
 .nav__a {
-    text-decoration: none;
+    color: white;
     text-transform: uppercase;
-    color: #000000;
-    font-size: 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-/*------MAIN-&-SECTION------*/
+.nav__li :hover {
+    background-color: white;
+    color: rgb(42, 42, 42);
+}
+
+/*ESTILOS MAIN*/
+
+    /*PRIMERA SECCION INDEX*/
+
 .subtitle {
-    font-size: 4rem;
-    color: #000000;
     text-align: center;
-    text-shadow: 0 0.2rem 0.5rem steelblue;
-    margin-bottom: 100px;
-    animation-name: llegando-derecha;
-    animation-duration: 5s;
-    animation-delay: 0.5s ease;
-    animation-direction: alternate;
+    font-size: 2rem;
+    text-decoration: black underline;
 }
 
 .p-portada {
-    font-size: 2rem;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    font-size: 1.5rem;
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 .container-img {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-.container-img2 {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    background-color: rgb(54, 54, 54);
-    border-radius: 10px;
-    color: rgb(185, 185, 185);
-    box-shadow: inset 2px 2px 0.5rem white;
-    margin: 3% 8%;
-    padding: 0;
+    width: 90%;
+    margin: 10px auto;
 }
 
-.img-portada {
-  
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow:  3px 3px 0.2rem rgb(0, 0, 0);
-    margin: 5%;
-}
-    
-.img-portada:hover {
-    box-shadow: 2px 2px 1.2rem rgb(255, 255, 255);
-    
-    transform: translate3d(15px);
-}
-
-
-/*------IMAGENES_QUIENES_SOMOS------*/
-.img-qs {
-    width: 450px;
-    height: 300px;
-    border-style: hidden;
-    border-radius: 25px;
-    box-shadow: 0 0.5rem 2.5rem steelblue;
-    margin: 2%;
-}
-
-
-/*-------GRID_QUIENES_SOMOS--------*/
-
-.grid-qs {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 2rem;
-    justify-items: center;
-    margin: 2% 4%;
-}
-.grid-qs .p-portada {
-    padding: 0;
-    margin: 0 8rem;
-    font-size: 2.5rem;
-}
-.label {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-
-.border {
-    background-color: rgb(153, 153, 153);
-    border-style: hidden;
-    border-radius: 25px;
-    box-shadow: -0.3rem 1.5rem 0.5rem steelblue;
-    padding: 4%;
-}
-
-/*-----------------------------------------*/
-.text-portada {
-    flex: 1 2 50px;
-    width: 300px;
-    height: 150px;
-    margin: 5%;
-    font-size: 2rem;
-    text-align:center
-}
-/*--------TARJETA-GALERIA-------*/
-.gallery-card {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-gap: 2rem;
-    justify-items: center;
-    margin-top: 2%;    
-}
-
-.card {
+.container-img img {
     width: 100%;
-    max-width: 300px;
-    height: 400px;
-    padding: 2rem;
-    margin: 1rem;
-    border-style: hidden;
     border-radius: 10px;
-    background-color: rgb(88, 88, 88);
-    text-align: center;
-    box-shadow: 0.5rem 1rem 0.8rem rgb(0, 114, 207);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
-.card:hover {
-    transform: scale(1.15);
-    transition: 0.8s ease all;
-    background-color:#0c0c0c;
-    opacity: 92%;
-    box-shadow:inset 2.5px 2.5px 0.2rem rgb(190, 190, 190);
-    
-}
+    /*SEGUNDA SECCION INDEX*/
 
-.card:hover .card__img{
-    box-shadow:  2px 2px 1.1rem rgb(154, 232, 252);
-}
-
-.card:hover .card__title {
-    font-size: 2rem;
-    text-align: center;
-    margin: 4;
-    color: rgb(161, 161, 161);
-    text-transform: uppercase;
-}
-.card:hover li {
-    color: rgb(161, 161, 161);
-}
-.card__img {
-    max-width: 250px;
-    max-height: 200px;
-    border-style: hidden;
+.card-combo {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    border-style: 2px solid;
     border-radius: 10px;
-
+    box-shadow: inset 2px 2px 2px white;
 }
 
-.card__title {
-    font-size: 2.5rem;
-    text-align: left;
-    margin: 2%;
-    color: rgb(0, 0, 0);
-}
-
-.card li {
-    font-size: 1.2rem;
-    list-style: none;
-    margin: 2%;
-    
-}
-/*------------FOOTER------------*/
-.footer {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    background: rgb(226, 226, 226);
-    box-shadow: 0 -1rem 1rem black;
-    
-}
-
-.footer__contact {
-    
-    padding: 2%;
-    font-size: 2rem;
-    text-align: center;
-    margin: 1%;
-}
-
-.footer__contact_a {
-    display:block;
-    font-size: 2rem;
-    color: black;
+.card-combo .subtitle {
+    color: white;
     text-decoration: none;
-    
+}
+
+.card-combo .p-portada {
+    color: white;
+}
+
+/*Footer*/
+.footer {
+    width: 100%;
+    background-color: rgb(165, 165, 165);
+    height: auto;
+}
+
+.footer__contact a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5%;
+}
+
+.footer__contact .p-portada {
+    margin: auto;
+    color: black;
+}
+
+.img-footer {
+    width: 50px;
 }
 
 .footer__ubicacion {
-    
-    padding: 2%;
-    font-size: 2rem;
-    text-align: center;
-    margin: 1%;
+    width: 100%;
+    padding: 1%;
 }
 
 .footer__horario {
-    
-    padding: 2%;
-    font-size: 2rem;
-    text-align: center;
-    margin: 1%;
-}
-
-@keyframes llegando-derecha{
-    0% {
-        opacity: 0;
-        transform: translatey(-100px);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translatey(100px);
-    }
- 
-    100% {
-        opacity: 1;
-        transform: translatey(0px);
-    }
+    width: 100%;
+    padding: 1%;
 }
