@@ -1,10 +1,14 @@
-const   iconoMenu = document.querySelector('.icono-menu'),
-        menu = document.querySelector('.cont-menu');
+const   toggle = document.getElementById('icono-menu');
+const   sidebar = document.getElementById('cont-menu');
+    document.onclick = function(e){
+        if(e.target.id !== 'cont-menu' && e.target.id !== 'icono-menu')
+        {
+            toggle.classList.remove('active')
+            sidebar.classList.remove('active')
+        }
+    }
+    toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active')
+    }
 
-        iconoMenu.addEventListener('click', (e) => {
-    
-            //alternamos estilo para menu y body
-            menu.classList.toggle('active');
-            document.body.classList.toggle('opacity');
-
-})

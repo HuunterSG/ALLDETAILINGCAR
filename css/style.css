@@ -37,7 +37,7 @@ html {
     
 }
     /* ESTILO PARA ICONO MENU*/
-.icono-menu {
+#icono-menu {
     margin-right: 40px ;
     position: relative;
     z-index: 1;
@@ -47,38 +47,43 @@ html {
     
 }
 
+
     /* ESTILO PARA CONTENEDOR DE MENU*/
-.cont-menu {
+#cont-menu {
     background-color: rgb(42, 42, 42);
     box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
     width: 300px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    left: -300px;
     transition: all .5s ease;
 }
     /*ESTILO PARA JAVASCRIPT*/
-.active {
-    transform: translate(-600px);
+#cont-menu.active {
+    left: 0;
 }
 
 .opacity {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.829);
     transition: all .5s ease;
 }
 
     /*ESTILO LISTADO MENU*/
 
 .nav__ul {
+
+    position: relative;
     padding: 100px 0px 20px 0px ;
     list-style: none;
 }
 
 .nav__li {
-    display: block;
+    display: inline-block;
+    width: 100%;
     padding: 10px 50px;
     cursor: pointer;
+
 }
 
 .nav__a {
@@ -88,8 +93,8 @@ html {
     font-size: 1.5rem;
 }
 
-.nav__li :hover {
-    background-color: white;
+.nav__li:hover {
+    background-color: rgb(94, 168, 187);
     color: rgb(42, 42, 42);
 }
 
